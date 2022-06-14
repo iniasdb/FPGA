@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Jun 14 17:32:34 2022
+# Process ID: 2540
+# Current directory: C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/decoder3_8/decoder8_3/decoder8_3.runs/impl_1
+# Command line: vivado.exe -log decoder8_3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source decoder8_3.tcl -notrace
+# Log file: C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/decoder3_8/decoder8_3/decoder8_3.runs/impl_1/decoder8_3.vdi
+# Journal file: C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/decoder3_8/decoder8_3/decoder8_3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source decoder8_3.tcl -notrace
