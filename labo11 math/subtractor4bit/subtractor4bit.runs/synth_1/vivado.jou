@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun 17 18:50:00 2022
+# Process ID: 17572
+# Current directory: C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo11 math/subtractor4bit/subtractor4bit.runs/synth_1
+# Command line: vivado.exe -log subtractor4bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source subtractor4bit.tcl
+# Log file: C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo11 math/subtractor4bit/subtractor4bit.runs/synth_1/subtractor4bit.vds
+# Journal file: C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo11 math/subtractor4bit/subtractor4bit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source subtractor4bit.tcl -notrace

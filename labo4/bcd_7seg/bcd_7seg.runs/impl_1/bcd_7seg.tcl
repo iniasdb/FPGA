@@ -70,12 +70,12 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/decoder3_8/bcd_7seg/bcd_7seg.cache/wt [current_project]
-  set_property parent.project_path C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/decoder3_8/bcd_7seg/bcd_7seg.xpr [current_project]
-  set_property ip_output_repo C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/decoder3_8/bcd_7seg/bcd_7seg.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/bcd_7seg/bcd_7seg.cache/wt [current_project]
+  set_property parent.project_path C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/bcd_7seg/bcd_7seg.xpr [current_project]
+  set_property ip_output_repo C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/bcd_7seg/bcd_7seg.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/decoder3_8/bcd_7seg/bcd_7seg.runs/synth_1/bcd_7seg.dcp
-  read_xdc C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/decoder3_8/bcd_7seg/bcd_7seg.srcs/constrs_1/imports/FPGA/Basys3_Master.xdc
+  add_files -quiet C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/bcd_7seg/bcd_7seg.runs/synth_1/bcd_7seg.dcp
+  read_xdc C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/labo4/bcd_7seg/bcd_7seg.srcs/constrs_1/imports/FPGA/Basys3_Master.xdc
   link_design -top bcd_7seg -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

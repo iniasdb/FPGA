@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Tue Jun 14 18:21:44 2022
+| Date             : Tue Jun 14 19:43:55 2022
 | Host             : DESKTOP-5HRBIDE running 64-bit major release  (build 9200)
 | Command          : report_power -file bcd_7seg_power_routed.rpt -pb bcd_7seg_power_summary_routed.pb -rpx bcd_7seg_power_routed.rpx
 | Design           : bcd_7seg
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 10.839       |
+| Total On-Chip Power (W)  | 10.949       |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 10.686       |
-| Device Static (W)        | 0.154        |
+| Dynamic (W)              | 10.794       |
+| Device Static (W)        | 0.156        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 30.8         |
-| Junction Temperature (C) | 79.2         |
+| Max Ambient (C)          | 30.3         |
+| Junction Temperature (C) | 79.7         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -54,10 +54,10 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | Slice Logic    |     0.023 |        7 |       --- |             --- |
 |   LUT as Logic |     0.023 |        4 |     20800 |            0.02 |
-| Signals        |     0.101 |       15 |       --- |             --- |
-| I/O            |    10.562 |       19 |       106 |           17.92 |
-| Static Power   |     0.154 |          |           |                 |
-| Total          |    10.839 |          |           |                 |
+| Signals        |     0.102 |       15 |       --- |             --- |
+| I/O            |    10.669 |       19 |       106 |           17.92 |
+| Static Power   |     0.156 |          |           |                 |
+| Total          |    10.949 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,9 +67,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.232 |       0.156 |      0.076 |
-| Vccaux    |       1.800 |     0.406 |       0.386 |      0.020 |
-| Vcco33    |       3.300 |     2.981 |       2.980 |      0.001 |
+| Vccint    |       1.000 |     0.235 |       0.157 |      0.078 |
+| Vccaux    |       1.800 |     0.410 |       0.390 |      0.020 |
+| Vcco33    |       3.300 |     3.012 |       3.011 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -134,7 +134,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| bcd_7seg |    10.686 |
+| bcd_7seg |    10.794 |
 +----------+-----------+
 
 
