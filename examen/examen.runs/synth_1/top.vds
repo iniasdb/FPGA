@@ -1,0 +1,355 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Jun 21 15:26:07 2022
+# Process ID: 29836
+# Current directory: C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.runs/synth_1/top.vds
+# Journal file: C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26316 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 798.852 ; gain = 233.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/top.vhd:42]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/imports/sources/clock_divider.vhd:34' bound to instance 'clk_slow' of component 'clock_divider' [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/top.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/imports/sources/clock_divider.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/imports/sources/clock_divider.vhd:40]
+INFO: [Synth 8-3491] module 'CNT' declared at 'C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/CNT.vhd:36' bound to instance 'CNT12' of component 'CNT' [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/top.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'CNT' [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/CNT.vhd:43]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/CNT.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'CNT' (2#1) [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/CNT.vhd:43]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/decoder.vhd:34' bound to instance 'cnt_seg' of component 'decoder' [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/top.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/decoder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (3#1) [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/decoder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'top' (4#1) [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/top.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 872.562 ; gain = 306.973
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 873.133 ; gain = 307.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 873.133 ; gain = 307.543
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 873.133 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/constrs_1/imports/FPGA/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/constrs_1/imports/FPGA/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/constrs_1/imports/FPGA/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 969.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 969.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 969.027 ; gain = 403.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 969.027 ; gain = 403.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 969.027 ; gain = 403.438
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'seg_reg' [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/decoder.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'an_reg' [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/decoder.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.srcs/sources_1/new/decoder.vhd:51]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 969.027 ; gain = 403.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     26 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	               26 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     26 Bit        Muxes := 1     
+Module CNT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[0]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[1]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[2]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[3]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[4]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[5]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[6]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[7]' (FD) to 'clk_slow/base_reg[25]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[8]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[9]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[10]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[11]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[12]' (FD) to 'clk_slow/base_reg[25]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[13]' (FD) to 'clk_slow/base_reg[25]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[14]' (FD) to 'clk_slow/base_reg[25]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[15]' (FD) to 'clk_slow/base_reg[25]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[16]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[17]' (FD) to 'clk_slow/base_reg[25]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[18]' (FD) to 'clk_slow/base_reg[24]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[19]' (FD) to 'clk_slow/base_reg[25]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[20]' (FD) to 'clk_slow/base_reg[25]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[21]' (FD) to 'clk_slow/base_reg[25]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[22]' (FD) to 'clk_slow/base_reg[25]'
+INFO: [Synth 8-3886] merging instance 'clk_slow/base_reg[23]' (FD) to 'clk_slow/base_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\clk_slow/base_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\clk_slow/base_reg[25] )
+INFO: [Synth 8-3886] merging instance 'cnt_seg/seg_reg[0]' (LD) to 'cnt_seg/seg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cnt_seg/seg_reg[1]' (LD) to 'cnt_seg/seg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cnt_seg/seg_reg[2]' (LD) to 'cnt_seg/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cnt_seg/seg_reg[3]' (LD) to 'cnt_seg/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cnt_seg/seg_reg[4]' (LD) to 'cnt_seg/seg_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_seg/seg_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (cnt_seg/seg_reg[6]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 969.027 ; gain = 403.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 969.027 ; gain = 403.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 969.027 ; gain = 403.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 969.027 ; gain = 403.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 974.355 ; gain = 408.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 974.355 ; gain = 408.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 974.355 ; gain = 408.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 974.355 ; gain = 408.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 974.355 ; gain = 408.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 974.355 ; gain = 408.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    10|
+|3     |LUT1   |     2|
+|4     |LUT2   |     4|
+|5     |LUT3   |    12|
+|6     |LUT4   |     5|
+|7     |FDCE   |     4|
+|8     |FDRE   |    27|
+|9     |LD     |     8|
+|10    |IBUF   |     3|
+|11    |OBUF   |    11|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+--------------+------+
+|      |Instance   |Module        |Cells |
++------+-----------+--------------+------+
+|1     |top        |              |    87|
+|2     |  CNT12    |CNT           |     8|
+|3     |  clk_slow |clock_divider |    48|
+|4     |  cnt_seg  |decoder       |    16|
++------+-----------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 974.355 ; gain = 408.766
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 974.355 ; gain = 312.871
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 974.355 ; gain = 408.766
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 974.355 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 984.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 984.734 ; gain = 682.672
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 984.734 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/inias/Desktop/ap/j1s2/FPGA/VHDL/examen/examen.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 21 15:26:41 2022...
